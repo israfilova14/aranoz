@@ -1,0 +1,23 @@
+.landing{
+    background-color: #ecfdff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 600px;
+    .landing-left{
+        h1{
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+            font-size: 66px;
+            width: 400px;
+        }
+        .lorem{
+            font-family: Poppins, sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            width: 360px;
+            line-height: 27px;
+        }
+    }
+}

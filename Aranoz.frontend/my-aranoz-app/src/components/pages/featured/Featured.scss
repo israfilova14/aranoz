@@ -1,9 +1,120 @@
 .featured{
     margin-top: 100px;
-    h2{
+    h1{
         font-family: Poppins, sans-serif;
         font-size: 700;
         font-size: 36px;
         text-align: center;
     }
+    .sofas-featured{
+        margin-top: 60px;
+        .sofas-featured-top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            img{
+                height: 300px;
+            }
+            .latest{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .blue-sofa-box{
+                width: 48%;
+                height: 400px;
+                background-color: #ecfdff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+            }
+            .orange-sofa-box{
+                width: 24%;
+                height: 400px;
+                background-color: #ecfdff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+            }
+        }
+        .sofas-featured-bottom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .latest{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .brown-sofa-box{
+                width: 24%;
+                height: 400px;
+                background-color: #ecfdff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .yellow-sofa-box{
+                width: 48%;
+                height: 400px;
+                background-color: #ecfdff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
+
+@media only screen and (max-width: 992px) {
+   .sofas-featured{
+    .sofas-featured-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .blue-sofa-box{
+            width: 70%;
+            img{
+                width: 80%;
+            }
+            background-color: white;
+        }
+        .orange-sofa-box{
+            width: 70%;
+            img{
+                width: 80%;
+            }
+            background-color: white;
+        }
+    }
+    .sofas-featured-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .brown-sofa-box{
+            width: 70%;
+            img{
+                width: 80%;
+            }
+            background-color: white;
+        }
+        .yellow-sofa-box{
+            width: 70%;
+            img{
+                width: 80%;
+            }
+            background-color: white;
+        }
+    }
+   }
+  }

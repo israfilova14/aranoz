@@ -1,0 +1,39 @@
+.bestsellers-container{
+    .best-sellers-title-box{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 80px;
+    }
+    .carusel{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slide{
+            border-radius: 0.5rem;
+        }
+        .slide-hidden{
+            display: none;
+        }
+
+        .arrow{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .arrow:hover{
+            cursor: pointer;
+        }
+
+        .arrow-left{
+            left: 1rem;
+        }
+
+        .arrow-right{
+            right: 1rem;
+        }
+    }
+}

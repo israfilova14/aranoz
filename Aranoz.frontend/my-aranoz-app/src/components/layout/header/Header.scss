@@ -1,8 +1,7 @@
 header{
     display: flex;
     align-items: center;
- 
-  
+
     .aranoz{
         flex: 0.2;
         display: flex;
@@ -21,6 +20,11 @@ header{
         li{
            list-style: none;
            font-size: 500;
+           cursor: pointer;
+        }
+
+        li:hover{
+            opacity: 0.6;
         }
     }
     
@@ -29,4 +33,33 @@ header{
         display: flex;
         gap: 10px;
     }
+    .menu-icon{
+        display: none;
+    }
 }
+
+@media only screen and (max-width: 992px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .aranoz{
+            flex: 0.2;
+        }
+        .menu-icon{
+            flex: 0.2;
+        }
+        .menu-icon{
+            display: block;
+        }
+        .links{
+            display: none;
+        }
+        .icons{
+            display: none
+        }
+    }
+  }
+
+ 

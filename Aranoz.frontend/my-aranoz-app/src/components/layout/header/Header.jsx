@@ -4,25 +4,22 @@ import { NavLink } from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import MenuIcon from '@mui/icons-material/Menu';
  
 const Header = () => {
   return (
     
         <header>
             <div className='aranoz'>
-                <h2>Aranoz.</h2>
+                <h1>Aranoz.</h1>
             </div>
             <div className='links'>
                 <nav>
                     <ul>
-                        <li>Home</li>
                         <li>
-                            Shop
-                            <select name="Shop" id="">
-                               <option value="">Shop Category</option>
-                               <option value="">Product Category</option>
-                            </select>
+                        <NavLink to={'/'} style={{textDecoration: "none", color: "black"}}>Home</NavLink>
                         </li>
+                        <li>Shop</li>
                         <li>Pages</li>
                         <li>Blog</li>
                         <li>Contact</li>
@@ -32,6 +29,9 @@ const Header = () => {
                         <li>
                             <NavLink to={'/basket'} style={{textDecoration: "none", color: "black"}}>Basket</NavLink>
                         </li>
+                        <li>
+                            <NavLink to={'/wishlist'} style={{textDecoration: "none", color: "black"}}>Wishlist</NavLink>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -39,6 +39,9 @@ const Header = () => {
                <SearchIcon></SearchIcon>
                <FavoriteBorderIcon></FavoriteBorderIcon>
                <LocalGroceryStoreIcon></LocalGroceryStoreIcon>
+            </div>
+            <div className='menu-icon'>
+                <MenuIcon></MenuIcon>
             </div>
         </header>
     
